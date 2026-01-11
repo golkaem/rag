@@ -54,3 +54,7 @@ def chunk_parsed_pdfs(input_dir="data/parsed", output_dir="data/chunks"):
             json.dump(all_chunks, f, ensure_ascii=False, indent=2)
 
         print(f"    Saved {len(all_chunks)} chunks")
+
+
+if __name__ == "__main__":
+    chunk_parsed_pdfs()
