@@ -1,0 +1,10 @@
+faiss-cpu
+gigachat
+langchain_text_splitters
+numpy
+pdf2image
+pdfplumber
+pytesseract
+python-dotenv
+sentence-transformers
+tqdm
