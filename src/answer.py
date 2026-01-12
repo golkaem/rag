@@ -21,7 +21,7 @@ def build_prompt(question_text, kind, context):
         "number": "If the information is not explicitly stated in the context, return 'N/A'.",
         "names": "If the information is not explicitly stated in the context, return 'N/A'.",
         "name": (
-            "Return name of the product or a company."
+            "Return name of the product or a company. "
             "Exclude companies with missing data from the comparison. "
             "If only one company remains, return its name. "
             "Do NOT return 'N/A'."
@@ -40,11 +40,9 @@ Question:
 {question_text}
 
 Rules:
-- Follow the answer format.
+Follow the answer format:
 - {missing_info_rules[kind]}
-
-Answer format:
-- {format_rules[kind]}
+- Answer format: {format_rules[kind]}
 
 Answer:
 """
